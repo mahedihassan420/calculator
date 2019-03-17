@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:background="#E6DBCACA"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Value :"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/EditTextOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="First Number"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="20dp">
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="25dp"/>
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="25dp"/>
+        <Button
+            android:id="@+id/multipleButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="*"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="25dp"/>
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="/"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EditTextTwo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        >
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="30sp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
